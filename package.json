@@ -1,0 +1,29 @@
+{
+   "name": "ieg-clockit",
+   "version": "1.0.0",
+   "description": "a user timesheet manager",
+   "main": "index.js",
+   "scripts": {
+      "tsc-init": "tsc --init",
+      "typeorm-init": "typeorm init --database mssql",
+      "start": "ts-node src/index.ts"
+   },
+   "author": "Michael Cabana",
+   "license": "ISC",
+   "dependencies": {
+      "@types/body-parser": "^1.17.0",
+      "@types/express": "^4.16.0",
+      "@types/node": "^10.5.2",
+      "body-parser": "^1.18.3",
+      "express": "^4.16.3",
+      "mssql": "^4.0.4",
+      "reflect-metadata": "^0.1.10",
+      "ts-node": "^7.0.0",
+      "typeorm": "0.2.7"
+   },
+   "devDependencies": {
+      "typescript": "2.5.2",
+      "ts-node": "3.3.0",
+      "@types/node": "^8.0.29"
+   }
+}
