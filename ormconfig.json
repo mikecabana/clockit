@@ -1,14 +1,21 @@
 {
    "type": "mssql",
-   "host": "localhost",
-   "username": "sa",
-   "password": "Admin12345",
-   "database": "tempdb",
+   "host": "",
+   "port": 1433,
+   "extra": {
+    "options": {
+        "encrypt": true
+    }
+   },
+   "username": "",
+   "password": "",
+   "database": "",
    "synchronize": true,
-   "logging": false,
+   "logging": true,
    "entities": [
       "src/entity/**/*.ts"
    ],
+   "migrationsTableName": "migrations",
    "migrations": [
       "src/migration/**/*.ts"
    ],
